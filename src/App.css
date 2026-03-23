@@ -14,7 +14,8 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    
+    background-color: var(--card-bg);
+    color: var(--text-color);
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;

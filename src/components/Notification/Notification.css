@@ -1,14 +1,19 @@
 .notification {
     position: fixed;
-    top: 70px; /* abaixo do header/botão */
+    top: 90px;
     right: 20px;
-    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+
+    background: var(--text-color); 
+    color: var(--bg-color);
+    
     border-radius: 8px;
     padding: 16px 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
     z-index: 9999;
     min-width: 300px;
     animation: slideIn 0.4s ease-out forwards;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .notification.hide {
@@ -41,20 +46,21 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #fff;
+    
+    color: inherit; 
 }
-
 .notification-icon {
     font-size: 20px;
     font-weight: bold;
     min-width: 24px;
     text-align: center;
+    color: #27ae60; /* Verde de sucesso */
 }
 
 .notification-content p {
     margin: 0;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 @media (max-width: 600px) {

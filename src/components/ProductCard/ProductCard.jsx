@@ -7,20 +7,20 @@ const ProductCard = ({ ...props }) => {
         'Asus': '/logos/Asus.png',
         'Marca Chinesa': '/logos/Marca-chinesa.png'
     };
-    const logoSrc = logoMap[props.brand] || '/default-logo.svg';
+    const logoSrc = logoMap[props.brand] || '/FabiaoTech.png';
 
     return (
 
         <div
             className="product"
             style={{
-                borderTop: `4px solid ${props.categoryColor || '#7ebdfc'}`
+                borderTop: `4px solid ${props.brandColor || '#7ebdfc'}`
             }}
         >
             <div
                 className="image"
                 style={{
-                    background: `linear-gradient(135deg, ${props.categoryColor}33 0%, ${props.categoryColor}11 100%)`
+                    background: `linear-gradient(135deg, ${props.brandColor}33 0%, ${props.brandColor}11 100%)`
                 }}
             >
                 <img
@@ -28,7 +28,7 @@ const ProductCard = ({ ...props }) => {
                     src={logoSrc}
                     onError={(e) => {
                         e.target.onerror = null;
-                        e.target.src = '/default-logo.svg';
+                        e.target.src = '/FabiaoTech.png';
                     }}
                     alt={`Logo da marca ${props.brand}`}
                 />

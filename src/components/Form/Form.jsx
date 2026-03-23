@@ -15,7 +15,7 @@ function Form(props) {
   const [prodState, setProdState] = useState('novo');
 
   const toSave = (evento) => {
-    evento.preventDefault(); // Evita que a página recarregue
+    evento.preventDefault(); 
 
     if (!name || !price) {
       alert("Por favor, preencha o nome e o preço do produto antes de salvar!");

@@ -15,7 +15,7 @@ function App () {
         
         setNotification({
             id: Date.now(),
-            message: `${item.name} adicionado com sucesso! ✓`
+            message: `${item.name} adicionado com sucesso!`
         });
     }
 
