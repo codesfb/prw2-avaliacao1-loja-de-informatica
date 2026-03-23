@@ -1,5 +1,5 @@
-import ProductCard from "../productCard/productCard";
 import './Area.css'
+import ProductCard from "../productCard/productCard";
 
 const Area = ({ itens }) => {
     const secoesLoja = [
@@ -22,7 +22,7 @@ const Area = ({ itens }) => {
         return <h2 style={{ textAlign: 'center', marginTop: '20px' }}>Sem produtos ainda</h2>;
     }
 
-    // Agrupar produtos por categoria
+    
     const productByCategory = secoesLoja.map(sec => ({
         ...sec,
         produtos: itens.filter(item => item.section === sec.nome)
