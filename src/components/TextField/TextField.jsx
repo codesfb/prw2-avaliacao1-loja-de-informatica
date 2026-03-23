@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './TextField.css'
 
 
 const TextField = (props) => {
@@ -8,9 +9,9 @@ const TextField = (props) => {
         }
   return(
     <div className="text-field">
-        <label > {props.label}</label>
+        <label>{props.label}</label>
         <input 
-            value={props.valor}
+            value={props.value || props.valor}
             onChange={typed}
             placeholder={props.placeholder}
         />

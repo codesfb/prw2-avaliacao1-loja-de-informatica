@@ -1,12 +1,48 @@
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --card-bg: #fff;
+  --card-border: #e9ecef;
+  --heading-color: #2c3e50;
+  --subtext-color: #6c757d;
+  --image-bg: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f4f4f4;
+  --card-bg: #1e1e1e;
+  --card-border: #333;
+  --heading-color: #ffffff;
+  --subtext-color: #aaa;
+  --image-bg: linear-gradient(135deg, #2a2a2a 0%, #333 100%);
+}
+
 body {
  margin: 0;
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
- 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
- sans-serif;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ transition: background-color 0.3s ease, color 0.3s ease;
+ line-height: 1.6;
 }
-code {
- font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
- monospace;
+
+* {
+ box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ margin: 0;
+ font-weight: 600;
+}
+
+button {
+ cursor: pointer;
+ font-family: inherit;
+}
+
+input, select, textarea {
+ font-family: inherit;
 }

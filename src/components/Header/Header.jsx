@@ -1,12 +1,17 @@
 import React from "react";
 import './Header.css'
+import Button from "../Button/Button";
 
-export function Header () {
+export function Header (props) {
 
   return(
     <div>
-      <header style={{backgroundColor:"black"}}>
-        <h1    style={{color:"white"}}>Loja de informática do Fabião</h1>
+      <header>
+        
+        <h1>Loja de informática do Fabião</h1>
+        <div className="buttons">
+          <Button onClick={props.onAddClick}>Adicionar Produtos</Button>
+        </div>
       </header>
 
     </div>
