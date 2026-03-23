@@ -1,5 +1,6 @@
+import ProductCard from "../ProductCard/ProductCard";
 import './Area.css'
-import ProductCard from "../productCard/productCard";
+
 
 const Area = ({ itens }) => {
     const secoesLoja = [
